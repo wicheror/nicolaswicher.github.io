@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolas Wicher - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: white;
+      color: black;
+    }
+    
+    header {
+      background-color: black;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    header h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+    }
+    
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    nav a:hover {
+      color: #CCCCCC;
+    }
+    
+    main {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+    
+    footer p {
+      font-size: 0.8rem;
+    }
+    
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Nicolas Wicher</h1>
+    <nav>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about-me">About me</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  
+  <main>
+    <a href="image1.jpg"><img src="thumbnail1.jpg" alt="Image 1"></a>
+    <a href="image2.jpg"><img src="thumbnail2.jpg" alt="Image 2"></a>
+    <a href="image3.jpg"><img src="thumbnail3.jpg" alt="Image 3"></a>
+    <a href="image4.jpg"><img src="thumbnail4.jpg" alt="Image 4"></a>
+    <!-- Repeat the above code for each image in your gallery -->
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Nicolas Wicher. All rights reserved.</p>
+  </footer>
+</body>
+</html>
